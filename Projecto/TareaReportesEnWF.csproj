@@ -70,26 +70,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ReporteDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FrmGeneradorReporte.cs">
+    <Compile Include="FrmPresentador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGeneradorReporte.Designer.cs">
-      <DependentUpon>FrmGeneradorReporte.cs</DependentUpon>
+    <Compile Include="FrmPresentador.Designer.cs">
+      <DependentUpon>FrmPresentador.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmVistaPreviaReporte.cs">
+    <Compile Include="FrmVistaPrevia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmVistaPreviaReporte.Designer.cs">
-      <DependentUpon>FrmVistaPreviaReporte.cs</DependentUpon>
+    <Compile Include="FrmVistaPrevia.Designer.cs">
+      <DependentUpon>FrmVistaPrevia.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <EmbeddedResource Include="FrmGeneradorReporte.resx">
-      <DependentUpon>FrmGeneradorReporte.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPresentador.resx">
+      <DependentUpon>FrmPresentador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmVistaPreviaReporte.resx">
-      <DependentUpon>FrmVistaPreviaReporte.cs</DependentUpon>
+    <EmbeddedResource Include="FrmVistaPrevia.resx">
+      <DependentUpon>FrmVistaPrevia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -141,6 +141,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Close_16x.png" />
+    <None Include="Resources\Close_red_16x.png" />
+    <None Include="Resources\Minimize_16x.png" />
+    <None Include="Resources\maximizar.png" />
+    <None Include="Resources\minimizar.png" />
+    <None Include="Resources\ImagenPrincipal.png" />
+    <None Include="Resources\ImagenPrincipalV2.png" />
+    <None Include="Resources\Cliente.png" />
+    <None Include="Resources\ClienteF.png" />
+    <None Include="Resources\ClienteC.png" />
+    <None Include="Resources\ProveedorC.png" />
+    <None Include="Resources\EmpleadoC.png" />
+    <None Include="Resources\ProveedorCamion.png" />
+    <None Include="Resources\furgoneta-de-reparto.png" />
+    <None Include="Resources\boton-de-encendido-apagado.png" />
+    <None Include="Resources\boton-de-encendido-apagado x16.png" />
+    <None Include="Resources\ReporteIcono.png" />
+    <None Include="Resources\ReporteIconox24.png" />
     <Content Include="Script\ScriptSQL.txt" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
