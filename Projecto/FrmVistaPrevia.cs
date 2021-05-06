@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,7 +50,9 @@ namespace TareaReportesEnWF
 
         private void FrmVistaPrevia_Load(object sender, EventArgs e)
         {
+            ReportParameter reportParameter = new ReportParameter("Tipo",_tipo);
             this.personaTableAdapter.Fill(this.reporteDataSet.Persona, _tipo, _filtro);
+            this.RpVwPrincipal.LocalReport.SetParameters(reportParameter);
             this.RpVwPrincipal.RefreshReport();
         }
     }
