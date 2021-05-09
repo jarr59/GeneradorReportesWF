@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TareaReportesEnWF.Mensajes;
 
 namespace TareaReportesEnWF
 {
@@ -21,8 +22,16 @@ namespace TareaReportesEnWF
         public FrmPresentador()
         {
             _tipo = string.Empty;
-
             InitializeComponent();
+            IniciarToolTip();
+        }
+
+        private void IniciarToolTip()
+        {
+            TpBarraBusqueda.SetToolTip(TxtBoxBuscar, MensajesToolTip.MbarraBusqueda);
+            TpLimpiar.SetToolTip(BtnLimpiar, MensajesToolTip.MbtnBorrar);
+            TpBuscar.SetToolTip(BtnBuscar, MensajesToolTip.MbtnBusqueda);
+            TpImprimir.SetToolTip(BtnImprimir, MensajesToolTip.MbtnImprimir);
         }
 
         #region Barra Superior
@@ -45,10 +54,11 @@ namespace TareaReportesEnWF
             BtnMaximizar.Visible = true;
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void BtnMinizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
         private void Mouse_MouseClick(object args, MouseEventArgs e)
         {
             LblMensajeSeleccioneLista.Visible = false;
@@ -157,5 +167,7 @@ namespace TareaReportesEnWF
             if (string.IsNullOrEmpty(_tipo))
                 LblMensajeSeleccioneLista.Visible = true;
         }
+
+
     }
 }
