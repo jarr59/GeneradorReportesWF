@@ -31,9 +31,6 @@
             this.PanelBarraDeTitulo = new System.Windows.Forms.Panel();
             this.LblTitulo = new System.Windows.Forms.Label();
             this.PcBoxIcono = new System.Windows.Forms.PictureBox();
-            this.BtnMinizar = new System.Windows.Forms.PictureBox();
-            this.BtnRestaurar = new System.Windows.Forms.PictureBox();
-            this.BtnMaximizar = new System.Windows.Forms.PictureBox();
             this.BtnCerrar = new System.Windows.Forms.PictureBox();
             this.BtnAceptar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
@@ -42,9 +39,6 @@
             this.LblTituloFormulario = new System.Windows.Forms.Label();
             this.PanelBarraDeTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcBoxIcono)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMinizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnRestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,9 +47,6 @@
             this.PanelBarraDeTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(119)))), ((int)(((byte)(182)))));
             this.PanelBarraDeTitulo.Controls.Add(this.LblTitulo);
             this.PanelBarraDeTitulo.Controls.Add(this.PcBoxIcono);
-            this.PanelBarraDeTitulo.Controls.Add(this.BtnMinizar);
-            this.PanelBarraDeTitulo.Controls.Add(this.BtnRestaurar);
-            this.PanelBarraDeTitulo.Controls.Add(this.BtnMaximizar);
             this.PanelBarraDeTitulo.Controls.Add(this.BtnCerrar);
             this.PanelBarraDeTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelBarraDeTitulo.Location = new System.Drawing.Point(0, 0);
@@ -86,46 +77,6 @@
             this.PcBoxIcono.TabIndex = 4;
             this.PcBoxIcono.TabStop = false;
             // 
-            // BtnMinizar
-            // 
-            this.BtnMinizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnMinizar.BackgroundImage = global::TareaReportesEnWF.Properties.Resources.Minimize_16x;
-            this.BtnMinizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMinizar.InitialImage = global::TareaReportesEnWF.Properties.Resources.Close_red_16x;
-            this.BtnMinizar.Location = new System.Drawing.Point(273, 4);
-            this.BtnMinizar.Name = "BtnMinizar";
-            this.BtnMinizar.Size = new System.Drawing.Size(15, 17);
-            this.BtnMinizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnMinizar.TabIndex = 3;
-            this.BtnMinizar.TabStop = false;
-            // 
-            // BtnRestaurar
-            // 
-            this.BtnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnRestaurar.BackgroundImage = global::TareaReportesEnWF.Properties.Resources.minimizar;
-            this.BtnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnRestaurar.InitialImage = global::TareaReportesEnWF.Properties.Resources.Close_red_16x;
-            this.BtnRestaurar.Location = new System.Drawing.Point(294, 4);
-            this.BtnRestaurar.Name = "BtnRestaurar";
-            this.BtnRestaurar.Size = new System.Drawing.Size(15, 17);
-            this.BtnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnRestaurar.TabIndex = 2;
-            this.BtnRestaurar.TabStop = false;
-            this.BtnRestaurar.Visible = false;
-            // 
-            // BtnMaximizar
-            // 
-            this.BtnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnMaximizar.BackgroundImage = global::TareaReportesEnWF.Properties.Resources.maximizar;
-            this.BtnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMaximizar.InitialImage = global::TareaReportesEnWF.Properties.Resources.Close_red_16x;
-            this.BtnMaximizar.Location = new System.Drawing.Point(294, 3);
-            this.BtnMaximizar.Name = "BtnMaximizar";
-            this.BtnMaximizar.Size = new System.Drawing.Size(15, 17);
-            this.BtnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnMaximizar.TabIndex = 1;
-            this.BtnMaximizar.TabStop = false;
-            // 
             // BtnCerrar
             // 
             this.BtnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -138,6 +89,7 @@
             this.BtnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnCerrar.TabIndex = 0;
             this.BtnCerrar.TabStop = false;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // BtnAceptar
             // 
@@ -165,6 +117,7 @@
             this.BtnCancelar.TabIndex = 13;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // LblListasDisponibles
             // 
@@ -213,14 +166,12 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAgregarTipo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAgregarTipo";
             this.Load += new System.EventHandler(this.FrmAgregarTipo_Load);
             this.PanelBarraDeTitulo.ResumeLayout(false);
             this.PanelBarraDeTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcBoxIcono)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMinizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnRestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -232,9 +183,6 @@
         private System.Windows.Forms.Panel PanelBarraDeTitulo;
         private System.Windows.Forms.Label LblTitulo;
         private System.Windows.Forms.PictureBox PcBoxIcono;
-        private System.Windows.Forms.PictureBox BtnMinizar;
-        private System.Windows.Forms.PictureBox BtnRestaurar;
-        private System.Windows.Forms.PictureBox BtnMaximizar;
         private System.Windows.Forms.PictureBox BtnCerrar;
         private System.Windows.Forms.Button BtnAceptar;
         private System.Windows.Forms.Button BtnCancelar;

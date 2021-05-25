@@ -16,7 +16,7 @@ namespace TareaReportesEnWF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPresentadorCopia());
+            Application.Run(new FrmPresentador());
         }
     }
 }
