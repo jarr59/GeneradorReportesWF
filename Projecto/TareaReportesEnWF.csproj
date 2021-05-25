@@ -70,11 +70,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ReporteDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FrmAgregarTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarTipo.Designer.cs">
+      <DependentUpon>FrmAgregarTipo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPresentador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPresentador.Designer.cs">
       <DependentUpon>FrmPresentador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPresentadorCopia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPresentadorCopia.Designer.cs">
+      <DependentUpon>FrmPresentadorCopia.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmVistaPrevia.cs">
       <SubType>Form</SubType>
@@ -86,8 +98,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="FrmAgregarTipo.resx">
+      <DependentUpon>FrmAgregarTipo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPresentador.resx">
       <DependentUpon>FrmPresentador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPresentadorCopia.resx">
+      <DependentUpon>FrmPresentadorCopia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVistaPrevia.resx">
       <DependentUpon>FrmVistaPrevia.cs</DependentUpon>
@@ -159,6 +177,8 @@
     <None Include="Resources\boton-de-encendido-apagado x16.png" />
     <None Include="Resources\ReporteIcono.png" />
     <None Include="Resources\ReporteIconox24.png" />
+    <None Include="Resources\ConfigurationFile_16x.png" />
+    <None Include="Resources\Trash_16x.png" />
     <Content Include="Script\ScriptSQL.txt" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">

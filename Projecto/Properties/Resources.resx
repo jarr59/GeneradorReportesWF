@@ -130,9 +130,6 @@
   <data name="Search_noHalo_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Search_noHalo_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ImagenPrincipalV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ImagenPrincipalV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ClienteC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ClienteC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,14 +157,20 @@
   <data name="EmpleadoC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EmpleadoC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Close_red_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Close_red_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ImagenPrincipalV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImagenPrincipalV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReporteIconox24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReporteIconox24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boton-de-encendido-apagado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boton-de-encendido-apagado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_red_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close_red_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Close_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Close_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,6 +181,9 @@
   <data name="furgoneta-de-reparto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\furgoneta-de-reparto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ConfigurationFile_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConfigurationFile_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ProveedorC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ProveedorC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -187,7 +193,7 @@
   <data name="ProveedorCamion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ProveedorCamion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ReporteIconox24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ReporteIconox24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Trash_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trash_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

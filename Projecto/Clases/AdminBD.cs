@@ -50,6 +50,11 @@ namespace TareaReportesEnWF
             _sqlConnection.Open();
         }
 
+        /// <summary>
+        /// Devuelve un objecto generico de SqlCommand
+        /// </summary>
+        /// <param name="ComandoSql">instrucción sql</param>
+        /// <returns>Object</returns>
         public object EjecutarComando(string comandoSQL)
         {
             object resultado = null;

@@ -379,7 +379,7 @@
             this.GrdPrincipal.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.GrdPrincipal.RowHeadersVisible = false;
             this.GrdPrincipal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GrdPrincipal.Size = new System.Drawing.Size(598, 395);
+            this.GrdPrincipal.Size = new System.Drawing.Size(574, 395);
             this.GrdPrincipal.TabIndex = 2;
             // 
             // LblBuscar

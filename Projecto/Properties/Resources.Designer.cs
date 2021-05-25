@@ -133,6 +133,16 @@ namespace TareaReportesEnWF.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ConfigurationFile_16x {
+            get {
+                object obj = ResourceManager.GetObject("ConfigurationFile_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EmpleadoC {
             get {
                 object obj = ResourceManager.GetObject("EmpleadoC", resourceCulture);
@@ -296,6 +306,16 @@ namespace TareaReportesEnWF.Properties {
         internal static System.Drawing.Bitmap Search_noHalo_16x {
             get {
                 object obj = ResourceManager.GetObject("Search_noHalo_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Trash_16x {
+            get {
+                object obj = ResourceManager.GetObject("Trash_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
